@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Myles is the Best❤️</title>
+    <link rel="stylesheet" href="Styles.css" />
+  </head>
+  <body>
+    <div>
+      <h1>Hello</h1>
+      <h2>Welcome to my website</h2>
+      <h1>Jaro is amazing ❤️</h1>
+      <p>Numa is okay too</p>
+      <h1>Ranking</h1>
+      <ul>
+        Myles
+      </ul>
+      <ul>
+        Jaro
+      </ul>
+      <ul>
+        Numa
+      </ul>
+      <ul>
+        Myles Again
+      </ul>
+      <ul>
+        Hungover Myles
+      </ul>
+      <ul>
+        Alex
+      </ul>
+      <fieldset id="First_row_of_buttons">
+        <legend>Filter the View</legend>
+        <input
+          type="button"
+          value="Oregon and Washington Only"
+          id="oregon and washington"
+        />
+        <input type="button" value="Clear filter" id="Clear" />
+        <input type="button" value="undo" id="undo" />
+      </fieldset>
+    </div>
+    <div class="Viz">
+      <script
+        type="module"
+        src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"
+      ></script>
+      <tableau-viz
+        id="tableauViz"
+        src="https://public.tableau.com/views/Superstore_embedded_800x800/Overview"
+        toolbar="bottom"
+        hide-tabs
+      >
+      </tableau-viz>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
