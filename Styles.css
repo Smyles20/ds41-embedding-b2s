@@ -1,9 +1,130 @@
-div {
-  background-color: rgb(228, 233, 189);
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-h1 {
-  color: purple;
-}
+
 body {
-  background-color: rgb(219, 152, 162);
+  font-family: "Arial", sans-serif;
+  background-color: #f0f0f0; /* Light gray background */
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+h1,
+h2 {
+  font-family: "Georgia", serif;
+  color: #6a1b9a; /* Purple */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #388e3c; /* Green */
+}
+
+/* Paragraph */
+p {
+  font-size: 1.1rem;
+  color: #555;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Unordered list */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+ul li {
+  font-size: 1.3rem;
+  color: #6a1b9a; /* Purple */
+  padding: 10px 0;
+  transition: background-color 0.3s ease-in-out;
+}
+
+ul li:nth-child(even) {
+  background-color: #e1bee7; /* Light purple */
+}
+
+ul li:nth-child(odd) {
+  background-color: #c8e6c9; /* Light green */
+}
+
+ul li:hover {
+  background-color: #7b1fa2; /* Darker purple on hover */
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Container div */
+div {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 1000px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Fieldset */
+fieldset {
+  border: 2px solid #388e3c; /* Green */
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #f1f8e9; /* Light green background */
+}
+
+legend {
+  font-size: 1.5rem;
+  color: #388e3c; /* Green */
+  font-weight: bold;
+}
+
+/* Button styling */
+input[type="button"] {
+  background-color: #388e3c; /* Green */
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  padding: 12px 25px;
+  margin: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="button"]:hover {
+  background-color: #6a1b9a; /* Purple */
+}
+
+input[type="button"]:active {
+  background-color: #4caf50; /* Green active */
+}
+
+/* Visualization section */
+.Viz {
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 2px solid #388e3c; /* Green border */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+tableau-viz {
+  width: 100%;
+  height: 600px;
+  border-radius: 8px;
 }
